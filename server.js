@@ -3,7 +3,6 @@ const httpProxy = require('http-proxy');
 const auth = require('basic-auth');
 
 // Configuration
-const PORT = 3128;
 const USERNAME = 'reiker';
 const PASSWORD = 'devilx';
 
@@ -44,6 +43,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
+const PORT = process.env.PORT || 3128;
 server.listen(PORT, () => {
   console.log(`HTTP Proxy running on port ${PORT}`);
 });
