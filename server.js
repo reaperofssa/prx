@@ -4,8 +4,8 @@ const auth = require('basic-auth');
 
 // Configuration
 const PORT = 3128;
-const USERNAME = 'user';
-const PASSWORD = 'pass';
+const USERNAME = 'reiker';
+const PASSWORD = 'devilx';
 
 // Create proxy server
 const proxy = httpProxy.createProxyServer({});
